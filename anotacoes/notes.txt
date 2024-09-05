@@ -1,0 +1,59 @@
+-- Alinhamento de elementos
+Elementos display: block podem ser alinhados com margim: auto;
+Elementos diplay: in-line não podem ser alinhados com margim: auto;
+
+#container {
+  width: 360px;
+  border: 1px solid red;
+  margin: auto; -- display block
+}
+
+#profile {
+  text-align: center; -- diplay in-line
+}
+
+#profile img {
+  width: 112px;
+}
+
+-- Listas não ordenadas
+tags <ul> e <li>
+
+<ul>
+        <li>
+          <a href="#">A</a>
+        </li>
+        <li>
+          <a href="#">B</a>
+        </li>
+        <li>
+          <a href="https://github.com/danyprescendo" target="_blank"
+            >Ver meu portifólio
+          </a>
+        </li>
+        <li>
+          <a href="#">C</a>
+        </li>
+      </ul>
+
+-- Alinhamento com position
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto; -- alinhado ao centro colocando margens de 4px nas bordas
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%; -- posicionando 50% abaixo do topo do elemento
+  right: 0;
+  z-index: 1; -- camadas (1 = primeira camada de cima, 0 = ultima camada de baixo)
+  transform: translateY(-50%); -- mover para cima/baixo (posicionando 50% acima da borda do elemento)
+}
+
+
