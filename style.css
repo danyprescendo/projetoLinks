@@ -121,6 +121,10 @@ ul li a {
   transition: background 0.3s;
 }
 
+.icon-spacing {
+  margin-right: 8px;
+}
+
 /*pseudo-selector*/
 ul li a:hover {
   background: var(--surface-color-hover);
